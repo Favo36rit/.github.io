@@ -21,7 +21,7 @@
         <div align='center'>
             <h1> Добро пожаловать на мой мини-сайт!</h1>
 			<p><strong id="id_prl" > Пароль: </strong>				
-			<input  maxlength="25" size="40" name="password" id="id_ftext" value="111" ></p>   			
+			<input  maxlength="25" size="40" name="password" id="id_ftext" value="123" ></p>   			
    			<p><input type="submit" onclick="f1()" value="Войти" id="btnID"></p>
 			<label for="btnID" id="id_proverka">Место рождения</label>
 		</div>
@@ -59,12 +59,15 @@
         	function f1()
 			{
 				let element = document.getElementById("id_ftext");
-				if (element.value == "111") show();	
+				if (element.value == "111")
+					{show();}
+				else
+					{document.getElementById('id_proverka').style.display = "block";}
 			}        	
     		</script>
 
             <br>			
-            <p> Спасибо за визит25! </p>
+            <p> Спасибо за визит26! </p>
 			
         </div>
 
