@@ -12,7 +12,9 @@
 			#id_proverka
 			{display: none;}
 			#error
-			{display: none;}			
+			{display: none;}	
+			#myAudio
+			{display: none;}	
     	</style>
 	</head>
     
@@ -93,6 +95,7 @@
 			<script>
         	function f2()
 			{
+				document.getElementById('myAudio').style.display = "block";
 				document.getElementById('myAudio').play();
 				document.getElementById('image').style.display = "none";	
 				document.getElementById('image2').style.display = "block";	
@@ -100,7 +103,7 @@
     		</script>
 
             <br>	
-			<div vertical-align="middle">
+			<div>
 				<label> Музыкальный фон: <audio controls autoplay src="vi.mp3" id="myAudio" ></audio> </label>				
 			</div>
 			
