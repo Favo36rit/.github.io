@@ -52,7 +52,8 @@
             </script>
 
 			<img id="image2" src="g1.jpg" >
-			<script type = "text/javascript">					
+			<script type = "text/javascript">	
+				var tek1 = 0;
 				var image2 = document.getElementById("image2");
             	var currentPos2 = 0;
 				var images2 = ["g1.jpg", "g2.jpg", "g3.jpg"];			
@@ -62,8 +63,13 @@
                     	currentPos2 = 0;
                 		image2.src = images2[currentPos2];										
             	}
-				if (currentPos2<2)
-				{	setInterval(volgendefoto2, 7000);}
+				if (tek1 < images2.length)
+				{
+					setInterval(volgendefoto2, 7000);
+					tek1 = tek1 +1;
+				}
+				else
+				{document.getElementById('image2').style.display = "none";	}
             </script>			
 
 			<script>
@@ -115,7 +121,7 @@
 			</div>
 			
 			<br>
-            <p id="id_spasibo"> Спасибо за визит97! </p>
+            <p id="id_spasibo"> Спасибо за визит98! </p>
 			
         </div>
 
