@@ -61,15 +61,16 @@
 				{
                 	if (++currentPos2 >= images2.length) 						
                     	currentPos2 = 0;
-                		image2.src = images2[currentPos2];										
+                		image2.src = images2[currentPos2];	
+					if (tek1 < images2.length)
+						{
+							setInterval(volgendefoto2, 7000);
+							tek1 = tek1 +1;
+						}
+					else
+						{document.getElementById('image2').style.display = "none";	}
             	}
-				if (tek1 < images2.length)
-				{
-					setInterval(volgendefoto2, 7000);
-					tek1 = tek1 +1;
-				}
-				else
-				{document.getElementById('image2').style.display = "none";	}
+				
             </script>			
 
 			<script>
@@ -121,7 +122,7 @@
 			</div>
 			
 			<br>
-            <p id="id_spasibo"> Спасибо за визит98! </p>
+            <p id="id_spasibo"> Спасибо за визит99! </p>
 			
         </div>
 
