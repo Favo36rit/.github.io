@@ -124,9 +124,14 @@
 			</div>
 			<script>
 				var aud = document.getElementById("myAudio");
-				var tek1 = new Date().toLocaleTimeString();	
+				var tek1 = new Date();	
+				var seconds = date.getSeconds();
+				
 				aud.pause();
- 				aud.setAttribute('src', "sms2.mp3");
+				if (20>30)
+					{
+ 						aud.setAttribute('src', "sms2.mp3");
+					}
 				aud.load();
  				aud.play();				
 				aud.onended = function()
