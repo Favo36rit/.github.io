@@ -27,7 +27,7 @@
 	<body>
 
         <div align='center'>
-            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт2!</h1>
+            <h1 id="id_minisite"> Добро пожаловать на мой мини-сайт3!</h1>
 			<p><strong id="id_prl" > Введите пароль: ( 4 цифры - день и месяц рождения) </strong>				
 			<input  maxlength="4" size="4" name="password" id="id_ftext" value="0000" ></p>  
 			<span id="error" ></span>
@@ -106,6 +106,15 @@
 			<script>
         	function f2()
 			{
+				var aud = document.getElementById("myAudio");
+				var tek1 = new Date();	
+				var seconds = date.getSeconds();				
+				if (35>30)
+					{
+ 						aud.setAttribute('src', "sms2.mp3");
+					}
+				aud.load();
+				
 				document.getElementById('id_muz').style.display = "block";
 				document.getElementById('myAudio').play();
 				document.getElementById('image').style.display = "none";	
@@ -123,17 +132,7 @@
 				<label> Музыкальный фон: <audio controls autoplay src="vi.mp3" id="myAudio" ></audio> </label>				
 			</div>
 			<script>
-				var aud = document.getElementById("myAudio");
-				var tek1 = new Date();	
-				var seconds = date.getSeconds();
-				
-				aud.pause();
-				if (35>30)
-					{
- 						aud.setAttribute('src', "sms2.mp3");
-					}
-				aud.load();
- 							
+				var aud = document.getElementById("myAudio");				
 				aud.onended = function()
 				{
     				document.getElementById('image2').style.display = "none";	
