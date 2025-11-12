@@ -124,12 +124,18 @@
 			</div>
 			<script>
 				var aud = document.getElementById("myAudio");
+				aud.pause();
+ 				aud.setAttribute('src', "sms.mp3");
+				aud.load();
+ 				aud.play();				
 				aud.onended = function()
 				{
     				document.getElementById('image2').style.display = "none";	
 					document.getElementById('id_muz').style.display = "none";
 					document.getElementById('id_spasibo').style.display = "block";
-					document.getElementById('id_spasibo2').style.display = "block";		
+					document.getElementById('id_spasibo2').style.display = "block";	
+					
+					
 				};
 			</script>
 
